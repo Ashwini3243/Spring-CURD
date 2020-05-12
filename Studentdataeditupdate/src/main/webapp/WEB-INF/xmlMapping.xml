@@ -1,0 +1,26 @@
+<mapping>
+    <class  name="com.nendrasys.Model.StudentList">
+        <field name="studentList" type="com.nendrasys.Model.Studentinfo" collection="arraylist">
+            <bind-xml name="studentinfo"  />
+        </field>
+    </class>
+    <class name="com.nendrasys.Model.Studentinfo">
+        <map-to xml="studentinfo" />
+
+        <field name="id" type="integer">
+            <bind-xml name="id" node="element" />
+        </field>
+
+        <field name="name" type="string">
+            <bind-xml name="name" node="element" />
+        </field>
+
+        <field name="age" type="integer">
+            <bind-xml name="age" node="element" />
+        </field>
+
+        <field name="country" type="string">
+            <bind-xml name="country" node="element" />
+        </field>
+</class>
+</mapping>
